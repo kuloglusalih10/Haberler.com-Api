@@ -33,7 +33,7 @@ const getAllnews = async (req ,res)=>{
                 news.link = element['elements'][1]['elements'][0]['text'];
                 news.date = (element['elements'][3]['elements'][0]['text']).substring(0,22);
                 news.description = element['elements'][4]['elements'][0]['cdata'];
-                news.image = ( element['elements'][5]['attributes'] && element['elements'][5]['attributes']['url'] !== undefined) ?  element['elements'][5]['attributes']['url'] : 'https://kuloglusalih10.com.tr/assets/1759492.png' ;
+                news.image = ( element['elements'][5]['attributes'] && element['elements'][5]['attributes']['url'] !== undefined) ?  element['elements'][5]['attributes']['url'] : 'https://kuloglusalih10.com.tr/assets/newsLogo.png' ;
 
                 parsedNews.push(news);
 
